@@ -72,8 +72,8 @@ print(var_12 != var_13)  # оператор сравнения
 #
 value_bool_2 = False
 
-if value_bool_2:
-    print("Правда 2")
-else:
-    print("Ложь 2")
+# if value_bool_2:
+#     print("Правда 2")
+# else:
+#     print("Ложь 2")
 
