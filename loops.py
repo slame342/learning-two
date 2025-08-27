@@ -35,49 +35,49 @@
 # print('цикл завершен!')
 
 
-list_1 = ['Астана', 'Караганда', 'Чимкент', 'Актюбинск']
-
-index_i = 0
-for i in list_1:
-    print(i + " " + str(list_1.index(i) + 1))
-index_i += 1
-string_city = f"{i} {list_1.index(i) + 1}"
-print(string_city)
-# print('i' + " " + str(list_1.index('i') + 1))
-
-
-# TODO циклы
-for i in [2, 3, 4, 5, 6]:
-    print(i)
-
-str_value_1 = "Many яблок"
-
-for char_element in str_value_1:
-    print(char_element)
-
-print('разделение')
-
-str_value_2 = [[2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6]]
-for first_loop in str_value_2:
-    print(first_loop)
-    for second_loop in first_loop:
-        print(second_loop)
-
-while_continue = True
-index = 0
-while while_continue:
-    index = index + 2
-    print(index)
-    # index += 2
-    if index >= 30:
-        # break
-        while_continue = False
-print("#############################")
-# # практическое задание с циклами 1
-list_2 = [input('введите число 1: '), input('введите число 2: ')]
-
-for i in list_2:
-    print(i)
+# list_1 = ['Астана', 'Караганда', 'Чимкент', 'Актюбинск']
+#
+# index_i = 0
+# for i in list_1:
+#     print(i + " " + str(list_1.index(i) + 1))
+# index_i += 1
+# string_city = f"{i} {list_1.index(i) + 1}"
+# print(string_city)
+# # print('i' + " " + str(list_1.index('i') + 1))
+#
+#
+# # TODO циклы
+# for i in [2, 3, 4, 5, 6]:
+#     print(i)
+#
+# str_value_1 = "Many яблок"
+#
+# for char_element in str_value_1:
+#     print(char_element)
+#
+# print('разделение')
+#
+# str_value_2 = [[2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6], [2, 3, 4, 5, 6]]
+# for first_loop in str_value_2:
+#     print(first_loop)
+#     for second_loop in first_loop:
+#         print(second_loop)
+#
+# while_continue = True
+# index = 0
+# while while_continue:
+#     index = index + 2
+#     print(index)
+#     # index += 2
+#     if index >= 30:
+#         # break
+#         while_continue = False
+# print("#############################")
+# # # практическое задание с циклами 1
+# list_2 = [input('введите число 1: '), input('введите число 2: ')]
+#
+# for i in list_2:
+#     print(i)
 #
 # # практическое задание с циклами 2
 # list_3 = [input('введите число 1: '), input('введите число 2: ')]
@@ -123,3 +123,15 @@ for i in list_2:
 # for list_elem in list_6:
 #     if int(list_elem) % 2 != 0:
 #         print(str(list_elem) + ' ' + 'нечетное число')
+
+
+var_list = ["Almaty", "Nur-sultan", "Taras", "Ekebaztuz"]
+
+index_i = 0
+
+for i in var_list:
+    string_city = f"{i} {index_i + 1}"
+
+    # print(i + " " + str(var_list.index(i) + 1))
+    print(string_city)
+    index_i += 1
