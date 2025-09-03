@@ -24,11 +24,19 @@
 from tkinter import *
 from tkinter import ttk
 import time
+from threading import Thread
+
+hours = 0
+minutes = 0
+seconds = 0
 
 
 def start_timer():
+    global hours
     hours = 0
+    global minutes
     minutes = 0
+    global seconds
     seconds = 0
 
     while True:
@@ -46,8 +54,16 @@ def start_timer():
             minutes = 0
             seconds = 0
             hours = 0
-        time.sleep(1)
+
+        if minutes > 5:
+            break
+
+        time.sleep(0.0001)
         print(f"{hours}:{minutes}:{seconds}")
+
+
+def start_new_thread():
+    Thread(target=start_timer).start()
 
 
 root = Tk()
@@ -100,3 +116,14 @@ Button(text="start",
 
 # print_to_console()
 root.mainloop()
+
+#
+# Thread(target= autoc).start()
+#
+# def autoc():
+# global click
+# while True:
+#     print("auto-click + 1")
+#     time.sleep(1)
+#     click += 1
+#     lbl.configure(text=int(click))
