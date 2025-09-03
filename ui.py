@@ -24,9 +24,16 @@
 from tkinter import *
 from tkinter import ttk
 
+
+def print_to_console(result):
+    print(result)
+
+
 root = Tk()
 
 frm = ttk.Frame(root, padding=100)
+root.title("таймер с интерфейсом на Phyton")
+root.geometry("640x480")
 frm.grid()
 
 # часы
@@ -39,18 +46,28 @@ ttk.Label(frm, text="00").grid(column=2, row=0)
 ttk.Label(frm, text=":").grid(column=3, row=0)
 # секунды
 ttk.Label(frm, text="00").grid(column=4, row=0)
+# кнопка стоп
+Button(frm, text="stop",
+       background="#555",
+       foreground="#ccc",
+       padx="20",
+       pady="8",
+       font="16"
+       ).grid(column=1, row=1)
+# кнопка старт
+ttk.Button(frm, text="start", command=print_to_console).grid(column=3, row=1)
 
 # ttk.Label(frm, text="Any").grid(column=0, row=1)
 # ttk.Label(frm, text="Alex").grid(column=1, row=1)
 # ttk.Label(frm, text="Ivan").grid(column=2, row=1)
 
-
+S
 #  1    2    3
 # Any Alex Ivan
 
 
 # ttk.Label(frm, text="Hello world!").grid(column=0, row=0)
-#
-#
 # ttk.Button(frm, text="Quit", command=root.destroy).grid(column=1, row=0)
+
+print_to_console("something")
 root.mainloop()
